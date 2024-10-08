@@ -1,0 +1,210 @@
+/***GENERAL STYLING***/
+*{ /*I had a problem with white spaces between the main 
+    elements(e.g. <footer> and <section>) and chatGPT told me to try
+    this to fix it*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, 
+h1, 
+p,
+li{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /*fonts: "https://www.w3schools.com/css/css_font.asp"*/
+}
+
+body{
+    width: 100%;
+}
+
+/***NAVIGATION BAR SECTION***/
+nav{
+    background-image: url(images/logo.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: 2% 80%;
+
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0.5%;
+    padding-top: 2.5%;
+    padding-left: 70px;
+}
+
+nav ul li{
+    font-weight: 600;
+    padding-left: 5%;
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav a{
+    background-color: transparent;
+    text-decoration: none;
+    color: #51279b;
+}
+
+nav a:hover{
+    color: #8662c7;
+}
+
+/***HEADER SECTION***/
+header{
+    background-image: url(images/florence.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 500px;
+    margin: -8px;
+}
+
+#main-text{
+    margin-top: 50px;
+    font-size: 24px;
+    margin-left: 8%;
+}
+
+#main-text h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#main-text button{
+    margin-top: 5%;
+    border: none;
+}
+
+#main-text a{
+    background-color: #51279b;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+#main-text a:hover{
+    color: lightgray;
+}
+
+/***CARDS SECTION***/
+.cards-section{
+    /*Needed the help of chatGPT to center the cards
+      prompt: help me center the cards within a section element */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    margin-top: 9px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+
+.card{
+    /*how to set two background images: 
+    https://www.w3schools.com/css/css3_backgrounds.asp#:~:text=CSS%20allows%20you%20to%20add,is%20closest%20to%20the%20viewer.;*/
+    background-image: url(images/heart.png) , url(images/comment.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 5% 80%, 23% 80%;
+    background-size: 20px 20px;
+    
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+    width: 360px;
+    height: 407px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.card:hover{
+    /*opacity: "https://www.w3schools.com/css/css_image_transparency.asp"*/
+    opacity: 0.7;
+}
+
+.card h3, .card p{
+    color: black;
+    width: 100%;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card h3 {
+    font-size: 14px;
+}
+
+.card p{
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.likes, .comments{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.likes {
+    margin-top: 10px;
+    margin-left: 22px;
+}
+
+.comments{
+    margin-left: 40px;
+}
+
+
+/***FOOTER SECTION***/
+/*footer inspired from the author Vipen Loka 
+  on website: "https://devdevout.com/css/css-footers" */
+
+footer{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 9px;
+    margin-left: -9px;
+    position: relative;
+    width: 100%;
+    
+    background-color: #51279b;
+}
+
+footer p,
+.menu-footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.menu-footer li{
+    display: inline-block;
+    margin: 0 10px;
+   
+    font-weight: 300;
+}
+
+.menu-footer a:hover{
+    color: lightgray;
+}
+.menu-footer a{
+    text-decoration: none;
+}

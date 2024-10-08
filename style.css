@@ -1,0 +1,156 @@
+/*GENERAL STYLING*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, 
+h1, 
+p,
+li{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /*https://www.w3schools.com/css/css_font.asp*/
+}
+
+body{
+    width: 100%;
+}
+
+/***NAVIGATION BAR SECTION***/
+nav{
+    background-image: url(images/logo.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+    background-color: #51279b;
+
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0.5%;
+    padding-top: 1.5%;
+    padding-left: 70px;
+}
+
+nav ul li{
+    font-weight: 600;
+    padding-left: 5%;
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav a{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: lightgray;
+}
+
+/***IMAGE SECTION***/
+section, 
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-img{
+    max-width: 100%;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+.image ul{
+    max-width: 800px;
+    margin-top: 1%;
+    list-style: none;
+}
+
+.image ul li{
+    margin: 1%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+}
+
+.image ul li img{
+    height: 15px;
+}
+
+/***RELATED IMAGES SECTION***/
+.rel-imgs{
+    max-width: 800px;
+    margin-top: 1%;  
+}
+
+.rel-imgs li{
+    display: inline-block;
+    
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.rel-imgs img{
+    border-radius: 5px;
+}
+
+/*FOOTER SECTION*/
+/*footer inspired from the author Vipen Loka 
+  on website: https://devdevout.com/css/css-footers*/
+
+footer{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 9px;
+    margin-left: -9px;
+    min-height: 100px;
+    width: 100%;
+
+    background-color: #51279b;
+}
+
+.menu-footer,
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu-footer a{
+    text-decoration: none;
+}
+.menu-footer a:hover{
+    color: lightgray;
+}
+
+.menu-footer li{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: 300;
+}
